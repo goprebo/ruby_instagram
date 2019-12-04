@@ -1,9 +1,9 @@
 [![wercker status](https://app.wercker.com/status/18ae5df682bec0bc60b9ed3174f9f98b/s/master "wercker status")](https://app.wercker.com/project/byKey/18ae5df682bec0bc60b9ed3174f9f98b)
-[![Coverage Status](https://coveralls.io/repos/github/goprebo/ruby_instagram/badge.svg?branch=master)](https://coveralls.io/github/goprebo/ruby_instagram?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/goprebo/ruby_instagram/badge.svg?branch=HEAD)](https://coveralls.io/github/goprebo/ruby_instagram?branch=master)
 
 # RubyInstagram
 
-Ruby wrapper for the Instagram APIs
+Ruby wrapper for the Instagram Basic display API. Based on old [Instagram](https://github.com/facebookarchive/instagram-ruby-gem)
 
 ## Installation
 
@@ -31,17 +31,14 @@ RubyInstagram.configure do |config|
 end
 ```
 
-### Authentication
+### Sample Client
 
-get "/oauth/connect" do
-  redirect Instagram.authorize_url(:redirect_uri => CALLBACK_URL)
-end
+Run ruby sample_app.rb.
 
-get "/oauth/callback" do
-  response = Instagram.get_access_token(params[:code], :redirect_uri => CALLBACK_URL)
-  session[:access_token] = response.access_token
-  redirect "/nav"
-end
+#### Available use cases:
+- Authorize/Access Token flow
+- Get user info
+- Get user media
 
 ## Development
 

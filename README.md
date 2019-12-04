@@ -3,7 +3,7 @@
 
 # RubyInstagram
 
-Ruby wrapper for the Instagram Basic display API. Based on old [Instagram](https://github.com/facebookarchive/instagram-ruby-gem)
+Ruby wrapper for the [Instagram Basic display API](https://developers.facebook.com/docs/instagram-basic-display-api). Based on already deprecated [Instagram API](https://github.com/facebookarchive/instagram-ruby-gem) gem
 
 ## Installation
 
@@ -31,14 +31,33 @@ RubyInstagram.configure do |config|
 end
 ```
 
+### Build authentatication window url
+
+```ruby
+RubyInstagram.authorize_url(redirect_uri: <CALLBACK_URL>)
+```
+
+### Get access token
+```ruby
+RubyInstagram.get_access_token(code, redirect_uri: <CALLBACK_URL>)
+```
+
+### Get user info
+```ruby
+client = RubyInstagram.client(access_token: <access_token>)
+user = client.user(fields: 'media_count,username,media,account_type')
+```
+
+### Get user media
+```ruby
+client = RubyInstagram.client(access_token: <access_token>)
+user = client.user(fields: 'media_count,username,media,account_type')
+items = client.user_media(fields: 'thumbnail_url,media_type,media_url,caption,username')
+```
+
 ### Sample Client
 
-Run ruby sample_app.rb.
-
-#### Available use cases:
-- Authorize/Access Token flow
-- Get user info
-- Get user media
+Run ```ruby sample_app.rb``` to test above descripted usage.
 
 ## Development
 

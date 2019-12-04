@@ -1,0 +1,88 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.instagram.com/oauth/access_token/
+    body:
+      encoding: UTF-8
+      string: app_id=2335514866760592&app_secret=a_secret&code=AQDRlATnuVjnBvGkDtHPm3_lVPZ4rlM1GikkDwYr_px7ZP-A1FH_EccJ971L6k8VMXfwknxTBOW7YEBl1oHjFFyUEPk3nudg0WNC2KN4jFKUbXITfTVhJfRoW00EUO9nKgEJb0JDUdkzfp04XRyH2zNDHVwRwy9-Mx0xgIccclsOlS4x93BY0ZkxruyCo1AmMozAfB1B7vaafBryPZfBHvEvLcnvXntR0_i1rtZHw9s8bA&grant_type=authorization_code&redirect_uri=https%3A%2F%2Fgoprebo.com%2F
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Instagram Ruby Gem 0.1.0
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      content-type:
+      - application/json; charset=utf-8
+      ig-set-password-encryption-web-key-id:
+      - '245'
+      ig-set-password-encryption-web-pub-key:
+      - f5a1fdb4e2e032e5d3b42c3350d69918eebdb640e2f9cc0fe1fc55cd7800cf30
+      vary:
+      - Accept-Language, Cookie, Accept-Encoding
+      content-language:
+      - en
+      date:
+      - Wed, 04 Dec 2019 18:05:27 GMT
+      strict-transport-security:
+      - max-age=31536000
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      pragma:
+      - no-cache
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-frame-options:
+      - SAMEORIGIN
+      content-security-policy:
+      - 'report-uri https://www.instagram.com/security/csp_report/; default-src ''self''
+        https://www.instagram.com; img-src https: data: blob:; font-src https: data:;
+        media-src ''self'' blob: https://www.instagram.com https://*.cdninstagram.com
+        https://*.fbcdn.net; manifest-src ''self'' https://www.instagram.com; script-src
+        ''self'' https://instagram.com https://www.instagram.com https://*.www.instagram.com
+        https://*.cdninstagram.com wss://www.instagram.com https://*.facebook.com
+        https://*.fbcdn.net https://*.facebook.net ''unsafe-inline'' ''unsafe-eval''
+        blob:; style-src ''self'' https://*.www.instagram.com https://www.instagram.com
+        ''unsafe-inline''; connect-src ''self'' https://instagram.com https://www.instagram.com
+        https://*.www.instagram.com https://graph.instagram.com https://*.graph.instagram.com
+        https://*.cdninstagram.com https://api.instagram.com wss://www.instagram.com
+        wss://edge-chat.instagram.com https://*.facebook.com https://*.fbcdn.net https://*.facebook.net
+        chrome-extension://boadgeojelhgndaghljhdicfkmllpafd blob:; worker-src ''self''
+        blob: https://www.instagram.com; frame-src ''self'' https://instagram.com
+        https://www.instagram.com https://staticxx.facebook.com https://www.facebook.com
+        https://web.facebook.com https://connect.facebook.net https://m.facebook.com;
+        object-src ''none''; upgrade-insecure-requests'
+      x-content-type-options:
+      - nosniff
+      x-xss-protection:
+      - '0'
+      x-aed:
+      - '13'
+      access-control-expose-headers:
+      - X-IG-Set-WWW-Claim
+      set-cookie:
+      - ig_did=9E4DA555-E458-4880-8598-48A9C9BFA44D; Domain=.instagram.com; expires=Sat,
+        01-Dec-2029 18:05:27 GMT; HttpOnly; Max-Age=315360000; Path=/; Secure, csrftoken=PLZq8gLjyzZZJFqb1kwFNtFTBgvPE6rP;
+        Domain=.instagram.com; expires=Wed, 02-Dec-2020 18:05:27 GMT; Max-Age=31449600;
+        Path=/; Secure, rur=FTW; Domain=.instagram.com; HttpOnly; Path=/; Secure,
+        mid=Xef1ZwAEAAEfkMXGr5z09eOuvzOl; Domain=.instagram.com; expires=Sat, 01-Dec-2029
+        18:05:27 GMT; Max-Age=315360000; Path=/; Secure
+      x-fb-trip-id:
+      - '664085054'
+      connection:
+      - close
+      content-length:
+      - '221'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token": "IGQVJXdGRuX1RhdDVTNW1pRUozRm5yNXF2d3BScWp3dzBOZAm51RWpBZAUZAOMV9TVHVOZAlpfcWtDd2Y2WjVHNXJERHBLbFBJQU95OTZAidjJNMnpTSk44V0xIQzZAPQjVLbkNaMHZATMXowcFZAVd3lSZAmQ4Sm5GNktsbFY5dmp3",
+        "user_id": 17841401409487362}'
+    http_version: 
+  recorded_at: Wed, 04 Dec 2019 18:05:27 GMT
+recorded_with: VCR 5.0.0

@@ -1,0 +1,10 @@
+box: ruby:2.5
+build:
+    steps:
+        - script:
+            name: Bundler update
+            code: gem install bundler
+        - bundle-install
+        - script:
+            name: Tests
+            code: bundle exec rake

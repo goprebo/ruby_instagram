@@ -7,6 +7,8 @@ require 'bundler/setup'
 require 'ruby_instagram'
 require 'pry'
 
+require 'vcr'
+
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
   config.example_status_persistence_file_path = '.rspec_status'
@@ -17,4 +19,10 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+end
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/vcr_cassetes'
+  c.hook_into :faraday
+  c.default_cassette_options = { record: :new_episodes }
 end

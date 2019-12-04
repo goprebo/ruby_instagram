@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.instagram.com/me?access_token=IGQVJXdGRuX1RhdDVTNW1pRUozRm5yNXF2d3BScWp3dzBOZAm51RWpBZAUZAOMV9TVHVOZAlpfcWtDd2Y2WjVHNXJERHBLbFBJQU95OTZAidjJNMnpTSk44V0xIQzZAPQjVLbkNaMHZATMXowcFZAVd3lSZAmQ4Sm5GNktsbFY5dmp3&fields=media_count%2Cusername%2Cmedia%2Caccount_type
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Instagram Ruby Gem 0.1.0
+      Authorization:
+      - Token token="IGQVJXdGRuX1RhdDVTNW1pRUozRm5yNXF2d3BScWp3dzBOZAm51RWpBZAUZAOMV9TVHVOZAlpfcWtDd2Y2WjVHNXJERHBLbFBJQU95OTZAidjJNMnpTSk44V0xIQzZAPQjVLbkNaMHZATMXowcFZAVd3lSZAmQ4Sm5GNktsbFY5dmp3"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      vary:
+      - Accept-Encoding
+      etag:
+      - '"d3d0c3346c89caaab35a66b4003ba59d47e7369e"'
+      content-type:
+      - application/json; charset=UTF-8
+      instagram-api-version:
+      - v1.0
+      strict-transport-security:
+      - max-age=15552000
+      pragma:
+      - no-cache
+      x-fb-rev:
+      - '1001494170'
+      access-control-allow-origin:
+      - "*"
+      cache-control:
+      - private, no-cache, no-store, must-revalidate
+      x-fb-trace-id:
+      - HkDLA3P19V0
+      x-fb-request-id:
+      - AY0YIuhAxVohkO2uszCuzz3
+      expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      x-fb-debug:
+      - LgDJhzVAaGhpAyD6rSOGIsG/j9kwHcgdB1TdajBoULsBwSKMjdhLb9IsqOlDhI3kv0KFu0tzAUFtZbTOgHvPow==
+      date:
+      - Wed, 04 Dec 2019 18:29:51 GMT
+      x-fb-trip-id:
+      - '664085054'
+      connection:
+      - close
+      content-length:
+      - '420'
+    body:
+      encoding: ASCII-8BIT
+      string: '{"media_count":5,"username":"prebo_app","media":{"data":[{"id":"17999723695128607"},{"id":"17897988415283918"},{"id":"18010992592067669"},{"id":"18017027164037704"},{"id":"17982710521151101"}],"paging":{"cursors":{"before":"QVFIUnQxRWlKZAERMTklUdGtxd3d0S0M4cVlMUksxaGc3TkVWeXRISzh3QzJBdXBnb2V0LXhGOUhmOFhEUkYtWGtqVTAwTFNUWlRfSFR0bVVya25mR3ctTFpR","after":"QVFIUmIyV1M4X1NBa0lxdlFnS0c0ZAC1NUmlzams5UW5kSnFoRHB2Y1B3blkzeWV1d1U3X2IzcDl3QlBGZAmlBdmRhVXEyeW1nZAWpmSFdHZAUR3cWphcHRjMDhR"}}},"account_type":"BUSINESS","id":"17841401409487362"}'
+    http_version: 
+  recorded_at: Wed, 04 Dec 2019 18:29:51 GMT
+recorded_with: VCR 5.0.0

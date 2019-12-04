@@ -7,7 +7,6 @@ module RubyInstagram
   # @see http://instagram.com/developer/
   class Client < API
     Dir[File.expand_path('client/*.rb', __dir__)].each { |f| require f }
-    include RubyInstagram::Client::Utils
 
     include RubyInstagram::Client::Users
   end

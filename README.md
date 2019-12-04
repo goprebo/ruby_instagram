@@ -1,3 +1,4 @@
+[![wercker status](https://app.wercker.com/status/18ae5df682bec0bc60b9ed3174f9f98b/s/master "wercker status")](https://app.wercker.com/project/byKey/18ae5df682bec0bc60b9ed3174f9f98b)
 [![Coverage Status](https://coveralls.io/repos/github/goprebo/ruby_instagram/badge.svg?branch=master)](https://coveralls.io/github/goprebo/ruby_instagram?branch=master)
 
 # RubyInstagram

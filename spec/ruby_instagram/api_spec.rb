@@ -22,11 +22,12 @@ RSpec.describe RubyInstagram::API do
   describe '#config' do
     let(:config) do
       config = {}
-      keys.each { |key| config[key] = key }
+      keys.each { |key| config[key] = key.to_s }
       config
     end
+    after { RubyInstagram.reset }
     it 'returns a hash representing the configuration' do
-      keys.each { |key| subject.send("#{key}=", key) }
+      keys.each { |key| subject.send("#{key}=", key.to_s) }
       expect(subject.config).to eq(config)
     end
   end

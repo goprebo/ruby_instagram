@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/github/goprebo/ruby_instagram/badge.svg?branch=master)](https://coveralls.io/github/goprebo/ruby_instagram?branch=master)
+
 # RubyInstagram
 
 Ruby wrapper for the Instagram APIs

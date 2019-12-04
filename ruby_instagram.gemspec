@@ -27,13 +27,13 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_development_dependency 'bundler', '~> 2.0'
-  spec.add_development_dependency 'coveralls'
-  spec.add_development_dependency 'pry'
+  spec.add_development_dependency 'coveralls', '~> 0.8.23'
+  spec.add_development_dependency 'pry', '~> 0.12'
   spec.add_development_dependency 'rake', '~> 10.0'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'sinatra', '~> 2.0'
-  spec.add_development_dependency 'vcr'
-  spec.add_development_dependency 'webmock'
+  spec.add_development_dependency 'vcr', '~> 5.0'
+  spec.add_development_dependency 'webmock', '~> 3.6'
 
   spec.add_runtime_dependency('faraday', '~> 0.17.0')
   spec.add_runtime_dependency('faraday_middleware', '~> 0.13')
